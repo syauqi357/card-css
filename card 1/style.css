@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: fervojo, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card--container {
+  background-color: rgb(239, 239, 239);
+  border-radius: 23.67px;
+  border: #d7d7d7 2.56px solid;
+  width: 362px;
+  /* height: 167px; */
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 11px 34px -14px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 1px 11px 34px -14px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 1px 11px 34px -14px rgba(0, 0, 0, 0.6);
+}
+
+.card--content {
+  /* background-color: antiquewhite; */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* element */
+
+.block{
+  background-color: rgb(197, 195, 195);
+  border-radius: 50px;
+  width: 30px;
+  height: 5px;
+  transition: 0.2s ease;
+}
+
+.block:hover {
+  width: 68px;
+  background-color: #d7d7d7;
+}
+
+.imageDisplay {
+  /* border: red 1px solid; */
+  background-color: rgb(221, 221, 221);
+  border-radius: 18px;
+  width: 112px;
+  height: 112px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageDisplay img {
+  width: 200px;
+  transition: 0.3s ease;
+}
+
+.imageDisplay img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.textDesc {
+  /* border: blue 2px solid; */
+  /* display: ; */
+  padding: 12px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.textDesc h1 {
+  font-size: 24.58px;
+}
+
+.selectItems {
+  /* border: red 1px solid; */
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.58rem;
+  /* align-items: center; */
+}
+
+.selectItems input {
+  width: 22px;
+  background-color: transparent;
+  border: none;
+}
+
+.selectItems select {
+  width: 60px;
+  height: 27px;
+  outline: none;
+  border: none;
+  background-color: rgb(199, 199, 199);
+  color: aliceblue;
+  border-radius: 7px;
+  padding: 4px;
+}
+
+.priceTag {
+  display: flex;
+  justify-content: space-between;
+  /* border: yellow 2px solid; */
+  align-items: center;
+}
+
+.priceTag p {
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.action--trigger {
+  display: flex;
+  gap: 5px;
+}
+
+.action--trigger button {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.action--trigger button:hover {
+  transform: scale(0.89);
+}
