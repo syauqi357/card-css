@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  span {
+    background-color: lightgreen;
+    color: seagreen;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 3px 6px 3px 6px;
+    border-radius: 3px;
+  }
+
+  .card--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card--wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0.49px 0.45px #000000);
+  }
+
+  .cardimage {
+    width: 189px;
+    height: 189px;
+    background-color: #b0fa66;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .cardimage img {
+    width: 75%;
+    transition: 0.2s ease-in-out;
+  }
+
+  .cardimage img:hover {
+    transform: scale(1.1);
+  }
+
+  .textCard {
+    background-color: #f5f5f5;
+    width: 189px;
+    height: 189px;
+    padding: 7.89px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .textCard h1 {
+    font-size: 14px;
+    padding-bottom: 7px;
+
+    font-weight: 600;
+  }
+
+  .price {
+    font-weight: 700;
+    margin: 2px;
+  }
+
+  .location {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+
+    margin: 2px;
+    font-size: 14px;
+  }
+
+  .icon img {
+    width: 15px;
+  }
+
+  .ratingStar {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 2px;
+    font-weight: 600;
+    font-size: 12px;
+    color: slategray;
+  }
+
+  .star-- {
+    width: 20px;
+  }
+
+  .buttonWishlist {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .buttonWishlist svg {
+    width: 20px;
+  }
+
+  .buttonWishlist button {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .buttonWishlist button:hover {
+    background-color: aliceblue;
+  }
