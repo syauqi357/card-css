@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 12px;
+  }
+
+  section {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    padding: 3rem;
+    gap: 2rem;
+    background-color: bisque;
+  }
+
+  .card {
+    width: 270px;
+    height: 360px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    border-radius: 5px;
+  }
+
+  
+
+  .caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 8.76px;
+
+    opacity: 0;
+    color: aliceblue;
+    padding: 32px;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 0px;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .caption p {
+    text-align: justify;
+    font-size: 0px;
+  }
+
+  hr {
+    background-color: #fff;
+    border: none;
+    height: 1px;
+    width: 100px;
+  }
+
+  a {
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 12px;
+    fill: #fff;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card:hover .caption {
+    opacity: 100%;
+    font-size: 14px;
+    opacity: 100%;
+    background: rgb(5, 15, 20);
+    background: -moz-linear-gradient(
+      356deg,
+      rgba(5, 15, 20, 1) 0%,
+      rgba(0, 212, 255, 0) 61%
+    );
+    background: -webkit-linear-gradient(
+      356deg,
+      rgba(5, 15, 20, 1) 0%,
+      rgba(0, 212, 255, 0) 61%
+    );
+    background: linear-gradient(
+      356deg,
+      rgba(5, 15, 20, 1) 0%,
+      rgba(0, 212, 255, 0) 61%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050f14",endColorstr="#00d4ff",GradientType=1);
+  }
+
+  .card:hover .caption p {
+    font-size: 12px;
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .newsIcon svg {
+    width: 20px;
+    fill: #fff;
+  }
+
+  a:hover {
+    gap: 22px;
+    animation: moveback 0.8s ease infinite;
+  }
+
+  @keyframes moveback {
+    from {
+      gap: 12px;
+    }
+
+    50% {
+      gap: 18px;
+    }
+
+    to {
+      gap: 12px;
+    }
+  }
+
+  .roomUp button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+  }
+
+  .roomUp svg {
+    fill: #ffffff;
+  }
